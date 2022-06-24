@@ -1,16 +1,18 @@
 {
     "activities": [
-        {"id": 1, "actType":"concer","title": "Konser 1", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Ankara","actDate": 2023},
-        {"id": 2, "actType":"concer","title": "Konser 2", "description": "Konser 2 Açıklama","imgUrl": "konser2.jpg","city":"İstanbul","actDate": 2022},
-        {"id": 3, "actType":"theatre","title": "Tiyatro 1", "description": "Tiyatro 1 Açıklama","imgUrl": "tiyatro1.jpg","city":"İzmir","actDate": 2024},
-        {"id": 4, "actType":"theatre","title": "Tiyatro 2", "description": "Tiyatro 2 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","actDate": 2025}
+        {"id": 1, "actType":"Concer","actId":1,"title": "Konser 1", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Ankara","actDate": 2023},
+        {"id": 2, "actType":"Concer","actId":1,"title": "Konser 2", "description": "Konser 2 Açıklama","imgUrl": "konser2.jpg","city":"İstanbul","actDate": 2022},
+        {"id": 3, "actType":"Theatre","actId":2,"title": "Tiyatro 1", "description": "Tiyatro 1 Açıklama","imgUrl": "tiyatro1.jpg","city":"İzmir","actDate": 2024},
+        {"id": 4, "actType":"Theatre","actId":2,"title": "Tiyatro 2", "description": "Tiyatro 2 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","actDate": 2025},
+        {"id": 5, "actType":"Sport","actId":3,"title": "Sport 1", "description": "Sport 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"Bursa","actDate": 2025},
+        {"id": 6, "actType":"Stand-up","actId":4,"title": "Stand-up 1", "description": "Stand-up 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","actDate": 2025}
     ],
 
     "categories":[
-        {"id": 1, "catType":"concer"},
-        {"id": 2, "catType":"theatre"},
-        {"id": 3, "catType":"sport"},
-        {"id": 4, "catType":"stand-up"},
+        {"id": 1, "catType":"Concer"},
+        {"id": 2, "catType":"Theatre"},
+        {"id": 3, "catType":"Sport"},
+        {"id": 4, "catType":"Stand-up"},
         {"id": 5, "catType":"Others"}
     ],
 

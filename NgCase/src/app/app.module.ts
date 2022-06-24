@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 import { ActiviesComponent } from './activies/activies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CityComponent } from './city/city.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { CityComponent } from './city/city.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
