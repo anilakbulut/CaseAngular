@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Activities } from '../models/activities';
-import { ActivityService } from '../services/activity.servis';
+import { ActivityService } from '../services/activity.service';
 
 @Component({
   selector: 'app-activies',
@@ -15,7 +15,7 @@ export class ActiviesComponent implements OnInit {
   constructor(private activitiyService: ActivityService) { }
 
   ngOnInit(): void {
-    this.activitiyService.getActivity().subscribe(data=>{
+      this.activitiyService.getActivity().subscribe(data=>{
       this.activities = data;
     });
   }
