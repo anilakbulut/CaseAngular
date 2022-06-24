@@ -6,17 +6,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './category/category.component';
 import { ActiviesComponent } from './activies/activies.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CityComponent } from './city/city.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
     CategoryComponent,
-    ActiviesComponent
+    ActiviesComponent,
+    CityComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

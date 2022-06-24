@@ -1,6 +1,3 @@
-<div class="class list-group">
-    <a href="" class="list-group-item list-group-item-action ">Konser</a>
-    <a href="" class="list-group-item list-group-item-action ">Sinema</a>
-    <a href="" class="list-group-item list-group-item-action ">Spor</a>
-    <a href="" class="list-group-item list-group-item-action ">Kültür-Sanat</a>
+<div class="class list-group" *ngFor="let item of categories">
+    <a href="" class="list-group-item list-group-item-action ">{{item.catType}}</a>
 </div>
