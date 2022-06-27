@@ -3,12 +3,12 @@
 <div class="container my3 mt-4">
   <div class="row">
     <div class="col-md-3">
-      <app-category></app-category>
+      <app-category (categoryId)='addCategoryId($event)'></app-category>
       <br><br>
       <app-city  (cityId)='addCityId($event)'></app-city>
     </div>
     <div class="col-md-9">
-      <app-activies [gelenCityId]="gonderdilenCityId"></app-activies>
+      <app-activies [filterCityId]="filterCityId" [filterCategoryId]="filterCategoryId"></app-activies>
     </div>
   </div>
 </div>

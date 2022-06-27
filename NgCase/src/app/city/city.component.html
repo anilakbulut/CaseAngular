@@ -1,10 +1,10 @@
-<div class="class list-group">
-    <a href="" 
+<div class="list-group-item list-group ">
+    <a href="javascript:void(0);" 
     *ngFor="let item of cities"
     class="list-group-item list-group-item-action "
-    routerLink ="activities/cities/{{item.id}}"
-    routerLinkActive ="active"  
-    (click)="cityOnClick(item.id)"
+    (click)="cityOnClick(item.id);displayAllCategories(item.id);active(item.id)"
+    [ngStyle]="{'background-color': activeIndex === item.id ? 'black' : 'white' ,
+                'color': activeIndex === item.id ? 'white' : 'black'}"
     >{{item.cityName}}
     </a>
 </div>

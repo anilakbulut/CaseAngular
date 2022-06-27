@@ -1,4 +1,4 @@
-<div class="card mb-4" *ngFor="let item of activities" >
+<div class="card mb-4" *ngFor="let item of activities | activitiesFilter:filterCityId:filterCategoryId" >
     <div class="row">
         <div class="col-md-3">
             <img src="assets/img/{{item.imgUrl}}" class="img-fluid rounded-end rounded-start" alt="">
@@ -8,7 +8,11 @@
                 <h3 class="card-title">{{item.title}}</h3>
                 <p class="card-text">{{item.description}}</p>
                 <button class="btn btn-outline-secondary">Details</button>
-                <p>gelenCityId: {{ gelenCityId}} </p>
+                <p>ŞehirId: {{item.cityId}}</p>
+                <p>Şehir Adı: {{item.city}}</p>
+                <p>Türü: {{item.actType}}</p>
+                <p>actId: {{ item.actId}} </p>
+                <p>filterCategoryId: {{filterCategoryId}}</p>
             </div>
         </div>
     </div>

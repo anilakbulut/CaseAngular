@@ -9,6 +9,7 @@ import { ActiviesComponent } from './activies/activies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CityComponent } from './city/city.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ActivitiesFilterPipe } from './pipes/activities-filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     CategoryComponent,
     ActiviesComponent,
-    CityComponent
+    CityComponent,
+    ActivitiesFilterPipe
   ],
   imports: [
     BrowserModule,

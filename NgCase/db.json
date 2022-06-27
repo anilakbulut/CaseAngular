@@ -1,12 +1,16 @@
 {
     "activities": [
-        {"id": 1, "actType":"Concer","actId":1,"title": "Konser 1", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Ankara","cityId":1,"actDate": 2023},
-        {"id": 2, "actType":"Concer","actId":1,"title": "Konser 2", "description": "Konser 2 Açıklama","imgUrl": "konser2.jpg","city":"İstanbul","cityId":2,"actDate": 2022},
-        {"id": 3, "actType":"Theatre","actId":2,"title": "Tiyatro 1", "description": "Tiyatro 1 Açıklama","imgUrl": "tiyatro1.jpg","city":"İzmir","cityId":3,"actDate": 2024},
-        {"id": 4, "actType":"Theatre","actId":2,"title": "Tiyatro 2", "description": "Tiyatro 2 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","cityId":2,"actDate": 2025},
-        {"id": 5, "actType":"Sport","actId":3,"title": "Sport 1", "description": "Sport 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"Bursa","cityId":5,"actDate": 2025},
-        {"id": 6, "actType":"Stand-up","actId":4,"title": "Stand-up 1", "description": "Stand-up 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","cityId":2,"actDate": 2025},
-        {"id": 6, "actType":"Others","actId":5,"title": "Others", "description": "Others Açıklama","imgUrl": "tiyatro2.jpg","city":"Kocaeli","cityId":4,"actDate": 2026}
+        {"id": 1, "actType":"Concer","actId":1,"title": "Konser", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Ankara","cityId":1,"actDate": 2023},
+        {"id": 2, "actType":"Concer","actId":1,"title": "Konser", "description": "Konser 2 Açıklama","imgUrl": "konser2.jpg","city":"İstanbul","cityId":2,"actDate": 2022},
+        {"id": 3, "actType":"Theatre","actId":2,"title": "Tiyatro", "description": "Tiyatro 1 Açıklama","imgUrl": "tiyatro1.jpg","city":"İzmir","cityId":3,"actDate": 2024},
+        {"id": 4, "actType":"Theatre","actId":2,"title": "Tiyatro", "description": "Tiyatro 2 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","cityId":2,"actDate": 2025},
+        {"id": 5, "actType":"Sport","actId":3,"title": "Sport", "description": "Sport 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"Bursa","cityId":5,"actDate": 2025},
+        {"id": 6, "actType":"Stand-up","actId":4,"title": "Stand-up", "description": "Stand-up 1 Açıklama","imgUrl": "tiyatro2.jpg","city":"İstanbul","cityId":2,"actDate": 2025},
+        {"id": 7, "actType":"Others","actId":5,"title": "Others", "description": "Others Açıklama","imgUrl": "tiyatro2.jpg","city":"Kocaeli","cityId":4,"actDate": 2026},
+        {"id": 8, "actType":"Concer","actId":1,"title": "Konser", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Bursa","cityId":5,"actDate": 2023},
+        {"id": 9, "actType":"Concer","actId":1,"title": "Konser", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Ankara","cityId":1,"actDate": 2024},
+        {"id": 10,"actType":"Concer","actId":1,"title": "Konser", "description": "Konser 1 Açıklama","imgUrl": "konser1.jpg","city":"Kocaeli","cityId":4,"actDate": 2022}
+
     ],
 
     "categories":[
@@ -14,7 +18,8 @@
         {"id": 2, "catType":"Theatre"},
         {"id": 3, "catType":"Sport"},
         {"id": 4, "catType":"Stand-up"},
-        {"id": 5, "catType":"Others"}
+        {"id": 5, "catType":"Others"},
+        {"id": 6, "catType":"Display All Categories"}
     ],
 
     "cities":[
@@ -23,7 +28,9 @@
         {"id": 3, "cityName":"İzmir"},
         {"id": 4, "cityName":"Kocaeli"},
         {"id": 5, "cityName":"Bursa"},
-        {"id": 6, "cityName":"Others"}
+        {"id": 6, "cityName":"Others"},
+        {"id": 7, "cityName":"Display All Cities"}
+
     ]
 
 }

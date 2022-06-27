@@ -23,10 +23,21 @@ export class CityComponent implements OnInit {
       this.cityService.getCities().subscribe(data=>{
       this.cities = data;
     });
+    this.cityId.emit(0);
   }
 
   cityOnClick(value: number){
     this.cityId.emit(value);
-    console.log("itemin id: "+ value)
+    console.log("city id: "+ value)
+  }
+  displayAllCategories(id: number){
+    if( id == 7){
+      this.cityId.emit(0);
+    }
+  }
+
+  public activeIndex: number;
+  public active(index: number): void {
+    this.activeIndex = index;
   }
 }

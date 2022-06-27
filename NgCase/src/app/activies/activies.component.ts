@@ -13,8 +13,9 @@ import { ActivityService } from '../services/activity.service';
 export class ActiviesComponent implements OnInit {
   activities: Activities[];
 
-  @Input() gelenCityId: number;
-
+  @Input() filterCityId: number;
+  @Input() filterCategoryId: number;
+  
   constructor(
     private activitiyService: ActivityService,
     private activatedRoute: ActivatedRoute
