@@ -9,10 +9,9 @@ export class ActivityService{
 
     constructor(private http: HttpClient){}
     
-    getActivity(actType: string): Observable<Activities[]>{
-        let categoryUrl = this.url;
-        if(actType){ categoryUrl += '?actType=' + actType;}
-
-        return this.http.get<Activities[]>(categoryUrl);
+    getActivity(): Observable<Activities[]>{
+        return this.http.get<Activities[]>(this.url);
     }
+
+
 }

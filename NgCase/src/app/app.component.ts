@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NgCase';
+  
+  gonderdilenCityId: number;
+
+  addCityId(newItem: any) {
+    console.log("parentCityId:"+newItem);
+    this.gonderdilenCityId = newItem;
+  }
+  addCategoryId(newItem: any) {
+    console.log("parentCategoryId:"+newItem);
+  }
 }
+

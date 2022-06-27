@@ -1,8 +1,9 @@
 <div class="class list-group">
-    <a href="" 
+    <a href=""
     class="list-group-item list-group-item-action "
     *ngFor="let item of categories" 
-    routerLink ="activities/category/{{ item.catType}}"
+    routerLink ="activities/category/{{ item.id}}"
+    routerLinkActive ="active"
     >
         {{item.catType}}
     </a>

@@ -12,7 +12,6 @@ import { CategoryService } from '../services/category.service';
 
 export class CategoryComponent implements OnInit {
   categories:Categories[];
-
   constructor(private categoryService:CategoryService ) { }
 
   ngOnInit(): void {
@@ -20,5 +19,4 @@ export class CategoryComponent implements OnInit {
       this.categories = data;
     });
   }
-
 }

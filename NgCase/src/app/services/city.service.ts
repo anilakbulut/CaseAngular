@@ -11,5 +11,4 @@ export class CityService{
     getCities():Observable<Cities[]>{
         return this.htpp.get<Cities[]>(this.url);
     }
-
 }   
