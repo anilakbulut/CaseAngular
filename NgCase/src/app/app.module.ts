@@ -10,6 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CityComponent } from './city/city.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ActivitiesFilterPipe } from './pipes/activities-filter.pipe';
+import { DateComponent } from './date/date.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import { FormsModule } from '@angular/forms';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +27,18 @@ import { ActivitiesFilterPipe } from './pipes/activities-filter.pipe';
     CategoryComponent,
     ActiviesComponent,
     CityComponent,
-    ActivitiesFilterPipe
+    ActivitiesFilterPipe,
+    DateComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

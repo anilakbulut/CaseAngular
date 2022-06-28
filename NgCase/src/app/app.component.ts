@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DateActivities } from './models/dateActivities';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,9 @@ export class AppComponent {
   filterCityId: number;
   filterCategoryId: number;
 
+  totalStartDate: DateActivities;
+  totalEndDate: DateActivities;
+
   addCityId(newItem: any) {
     console.log("parentCityId:"+newItem);
     this.filterCityId = newItem;
@@ -18,6 +22,13 @@ export class AppComponent {
   addCategoryId(newItem: any) {
     console.log("parentCategoryId:"+newItem);
     this.filterCategoryId = newItem;
+  }
+
+  startDate(newItem: any){
+    this.totalStartDate = newItem;
+  }
+  endDate(newItem:any){
+    this.totalEndDate = newItem;
   }
 }
 

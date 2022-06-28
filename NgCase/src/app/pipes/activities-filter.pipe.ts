@@ -19,7 +19,6 @@ export class ActivitiesFilterPipe implements PipeTransform {
       return activies.filter((a: Activities) =>
       a.actId == filterCategoryId);
     }
-
     return activies;
   }
 
