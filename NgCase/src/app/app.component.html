@@ -8,7 +8,9 @@
       <app-city  (cityId)='addCityId($event)'></app-city>
     </div>
     <div class="col-md-7">
-      <app-activies [filterCityId]="filterCityId" [filterCategoryId]="filterCategoryId"></app-activies>
+      <app-activies [filterCityId]="filterCityId" [filterCategoryId]="filterCategoryId"
+      [totalStartDate]="totalStartDate" [totalEndDate]="totalEndDate">
+      </app-activies>
     </div>
     <div class="col-md-2">
       <app-date (totalStartDate)='startDate($event)' (totalEndDate)='endDate($event)'></app-date>

@@ -12,23 +12,34 @@ export class AppComponent {
   filterCityId: number;
   filterCategoryId: number;
 
-  totalStartDate: DateActivities;
-  totalEndDate: DateActivities;
+  totalStartDate: number[] = [];
+  totalEndDate: number[]= [];
 
   addCityId(newItem: any) {
-    console.log("parentCityId:"+newItem);
     this.filterCityId = newItem;
   }
   addCategoryId(newItem: any) {
-    console.log("parentCategoryId:"+newItem);
     this.filterCategoryId = newItem;
   }
 
   startDate(newItem: any){
-    this.totalStartDate = newItem;
+    if(this.totalStartDate.length==3) this.totalStartDate=[];
+    
+    this.totalStartDate.push(newItem.day)
+    this.totalStartDate.push(newItem.month)
+    this.totalStartDate.push(newItem.year)
+    console.log("app componentte start: " + this.totalStartDate);
+    
   }
   endDate(newItem:any){
-    this.totalEndDate = newItem;
+    if(this.totalEndDate.length==3) this.totalEndDate=[];
+    
+    this.totalEndDate.push(newItem.day)
+    this.totalEndDate.push(newItem.month)
+    this.totalEndDate.push(newItem.year)
+    console.log("app componentte end: " + this.totalEndDate);
+  } 
+  ngOnChanges():void{
   }
 }
 

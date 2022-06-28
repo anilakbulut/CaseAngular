@@ -25,7 +25,6 @@ export class CategoryComponent implements OnInit {
 
   categoryOnClick(value: number){
     this.categoryId.emit(value);
-    console.log("category id: "+ value)
   }
   displayAllCategories(id: number){
     if( id == 6){

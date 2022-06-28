@@ -6,6 +6,6 @@ export interface Activities{
     description: string;
     imgUrl: string;
     city:string;
-    actDate: number;
+    date:string;
     cityId:number;
 }

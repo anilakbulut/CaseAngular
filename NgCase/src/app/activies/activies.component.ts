@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Activities } from '../models/activities';
+import { DateActivities } from '../models/dateActivities';
 import { ActivityService } from '../services/activity.service';
 
 @Component({
@@ -15,7 +15,8 @@ export class ActiviesComponent implements OnInit {
 
   @Input() filterCityId: number;
   @Input() filterCategoryId: number;
-  
+  @Input() totalStartDate: number[]=[];
+  @Input() totalEndDate: number[]=[];
   constructor(
     private activitiyService: ActivityService,
     private activatedRoute: ActivatedRoute
@@ -25,9 +26,13 @@ export class ActiviesComponent implements OnInit {
       this.activitiyService.getActivity().subscribe(data=>{
         this.activities = data;
       });
-      
+      this.totalStartDate=[0,0,0]
+      this.totalEndDate=[0,0,0]
   }
-
+  bassss(){
+    console.log(this.totalStartDate)
+    console.log(this.totalEndDate)
+  }
 
   
 }

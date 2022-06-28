@@ -33,7 +33,6 @@ export class DateComponent implements OnInit {
                           month:this.endDate.getMonth()+1,
                           year:this.endDate.getFullYear()};
     this.totalEndDate.emit(this.sendEndDate);
-    
   }
 
 
