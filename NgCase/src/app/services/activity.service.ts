@@ -13,5 +13,9 @@ export class ActivityService{
         return this.http.get<Activities[]>(this.url);
     }
 
+    
+    getActivityById(activityId:number): Observable<Activities>{
+        return this.http.get<Activities>(this.url + "/" + activityId);
+    }
 
 }

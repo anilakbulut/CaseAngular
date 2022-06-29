@@ -8,6 +8,7 @@
       <app-city  (cityId)='addCityId($event)'></app-city>
     </div>
     <div class="col-md-7">
+      <router-outlet></router-outlet>
       <app-activies [filterCityId]="filterCityId" [filterCategoryId]="filterCategoryId"
       [totalStartDate]="totalStartDate" [totalEndDate]="totalEndDate">
       </app-activies>

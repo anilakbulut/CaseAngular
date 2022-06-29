@@ -29,10 +29,6 @@ export class ActiviesComponent implements OnInit {
       this.totalStartDate=[0,0,0]
       this.totalEndDate=[0,0,0]
   }
-  bassss(){
-    console.log(this.totalStartDate)
-    console.log(this.totalEndDate)
-  }
 
-  
+
 }

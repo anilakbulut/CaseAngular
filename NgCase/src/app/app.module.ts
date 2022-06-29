@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
+import { ActivitiesDetailsComponent } from './activies/activities-details/activities-details.component';
 
 
 
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     ActiviesComponent,
     CityComponent,
     ActivitiesFilterPipe,
-    DateComponent
+    DateComponent,
+    ActivitiesDetailsComponent
   ],
   imports: [
     BrowserModule,
