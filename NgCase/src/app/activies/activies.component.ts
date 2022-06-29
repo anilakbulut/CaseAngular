@@ -17,6 +17,9 @@ export class ActiviesComponent implements OnInit {
   @Input() filterCategoryId: number;
   @Input() totalStartDate: number[]=[];
   @Input() totalEndDate: number[]=[];
+
+  text:string ="";
+
   constructor(
     private activitiyService: ActivityService,
     private activatedRoute: ActivatedRoute
@@ -29,6 +32,5 @@ export class ActiviesComponent implements OnInit {
       this.totalStartDate=[0,0,0]
       this.totalEndDate=[0,0,0]
   }
-
 
 }

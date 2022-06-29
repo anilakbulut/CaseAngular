@@ -16,7 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
-import { ActivitiesDetailsComponent } from './activies/activities-details/activities-details.component';
+import { SearchBarFilterPipe } from './pipes/search-bar-filter.pipe';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -30,7 +31,8 @@ import { ActivitiesDetailsComponent } from './activies/activities-details/activi
     CityComponent,
     ActivitiesFilterPipe,
     DateComponent,
-    ActivitiesDetailsComponent
+    SearchBarFilterPipe,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

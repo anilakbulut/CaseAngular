@@ -24,22 +24,15 @@ export class AppComponent {
 
   startDate(newItem: any){
     if(this.totalStartDate.length==3) this.totalStartDate=[];
-    
     this.totalStartDate.push(newItem.day)
     this.totalStartDate.push(newItem.month)
     this.totalStartDate.push(newItem.year)
-    console.log("app componentte start: " + this.totalStartDate);
-    
   }
   endDate(newItem:any){
     if(this.totalEndDate.length==3) this.totalEndDate=[];
-    
     this.totalEndDate.push(newItem.day)
     this.totalEndDate.push(newItem.month)
     this.totalEndDate.push(newItem.year)
-    console.log("app componentte end: " + this.totalEndDate);
-  } 
-  ngOnChanges():void{
   }
 }
 

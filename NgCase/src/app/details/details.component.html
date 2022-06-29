@@ -49,3 +49,13 @@
 
 
 
+<!-- html file -->
+<img id="image" src="test.jpg">
+
+<script>
+  const img = document.getElementById("image")
+  img.addEventListener("error", function(event) {
+    event.target.src = "https://halktv.com.tr/d/news/158789.jpg"
+    event.onerror = null
+  })
+</script>

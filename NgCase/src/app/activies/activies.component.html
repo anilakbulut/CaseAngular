@@ -1,17 +1,29 @@
-<div class="card mb-4" *ngFor="let item of activities | 
-                        activitiesFilter:filterCityId:filterCategoryId:totalStartDate:totalEndDate" >
-    <div class="row" >
-        <div class="col-md-6">
-            <img src="assets/img/{{item.imgUrl}}" class="img-fluid rounded-end rounded-start" alt="">
-        </div>
-        <div class="col-md-6">
-            <div class="card-body">
-                <h3 class="card-title">{{item.title}}</h3>
-                <p class="card-text">{{item.description}}</p>
-                <p>{{item.id}}</p>
-                <a class="btn btn-outline-secondary" routerLink = "activities/{{item.id}}" >Details</a>
+
+<div>
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="text" placeholder="Searching...">
+        <small class="text-muted"> {{text}}</small>
+    </div>
+    
+    <div class="card mb-4" *ngFor="let item of activities | 
+                            activitiesFilter:filterCityId:filterCategoryId:totalStartDate:totalEndDate |
+                            searchBarFilter:text
+                            " >
+        <div class="row" >
+            <div class="col-md-6">
+                <img src="assets/img/{{item.imgUrl}}" class="img-fluid rounded-end rounded-start" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h3 class="card-title">{{item.title}}</h3>
+                    <p class="card-text">{{item.description}}</p>
+                    <p>{{item.id}}</p>
+                    <a class="btn btn-outline-secondary" routerLink="activities/{{item.id}}"  >Details</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
