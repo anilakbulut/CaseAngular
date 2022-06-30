@@ -5,13 +5,13 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
+                        <img src="assets/img/{{activities.imgUrl}}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
                         <img src="assets/img/konser3.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="assets/img/konser4.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/konser5.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -25,12 +25,12 @@
                   </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">{{activities.title}}</h3>
-              <p class="card-text">{{activities.description}}</p>
+              <h3 class="card-title"><b>{{activities.title}}</b></h3>
+              <p class="card-text"><b>{{activities.description}}</b></p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">City: {{activities.city}}</li>
-              <li class="list-group-item">Date: {{activities.date}}</li>
+              <li class="list-group-item"><b>City: {{activities.city}}</b></li>
+              <li class="list-group-item"><b>Date: {{activities.date}}</b></li>
             </ul>
           </div>
     </div>

@@ -2,12 +2,10 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <router-outlet></router-outlet>
-          <p>Modal body text goes here.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
@@ -19,7 +17,7 @@
 
 <div>
     <div class="mb-2">
-        <input class="form-control" type="text" [(ngModel)]="text" placeholder="Search...">
+        <input class="form-control" type="text" [(ngModel)]="text" placeholder="Search...by title or description">
     </div>
     <app-popular-activities></app-popular-activities>
   <div class="modal fade"id="reg-modal" aria-hidden="true" aria-labelledby="modal-title">
@@ -39,7 +37,7 @@
     </div>
   </div>
 </div>
-    <div class="card mb-4" *ngFor="let item of activities | 
+    <div class="card mb-4" style="background-color:rgb(245, 243, 243)" *ngFor="let item of activities | 
                             activitiesFilter:filterCityId:filterCategoryId:totalStartDate:totalEndDate |
                             searchBarFilter:text
                             " >
@@ -51,7 +49,6 @@
                 <div class="card-body"> 
                     <h3 class="card-title"><b>{{item.title}}</b></h3>
                     <p class="card-text"><b>{{item.description}}</b></p>
-                    <p><b>{{item.id}}</b></p>
                     <a class="btn btn-outline-secondary" routerLink="activities/{{item.id}}"
                     data-bs-toggle="modal" data-bs-target="#reg-modal"
                     > <b>Details</b></a>

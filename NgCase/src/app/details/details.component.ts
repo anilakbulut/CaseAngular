@@ -12,7 +12,7 @@ import { ActivityService } from '../services/activity.service';
 export class DetailsComponent implements OnInit {
 
   activities: Activities;
-  
+
   constructor(private activityService: ActivityService,
     private activatedRoute: ActivatedRoute ) { }
 
@@ -22,5 +22,6 @@ export class DetailsComponent implements OnInit {
           this.activities = data;
         })
       })
+      
     }
 }
