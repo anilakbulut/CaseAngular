@@ -8,4 +8,5 @@ export interface Activities{
     city:string;
     date:string;
     cityId:number;
+    isPopular:boolean;
 }

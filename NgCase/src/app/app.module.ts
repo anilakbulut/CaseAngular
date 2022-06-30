@@ -18,7 +18,9 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { SearchBarFilterPipe } from './pipes/search-bar-filter.pipe';
 import { DetailsComponent } from './details/details.component';
-
+import { MatDialogModule} from '@angular/material/dialog';
+import { PopularActivitiesComponent } from './popular-activities/popular-activities.component';
+import { PopularPipe } from './pipes/popular.pipe';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { DetailsComponent } from './details/details.component';
     ActivitiesFilterPipe,
     DateComponent,
     SearchBarFilterPipe,
-    DetailsComponent
+    DetailsComponent,
+    PopularActivitiesComponent,
+    PopularPipe
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { DetailsComponent } from './details/details.component';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

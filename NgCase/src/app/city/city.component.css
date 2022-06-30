@@ -1,0 +1,10 @@
+a:link, a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  div:hover {
+    background-color: rgb(236, 232, 232);
+  }

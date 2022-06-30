@@ -1,3 +1,12 @@
-.add-colour{
-    background-color: aqua;
+a:link, a:visited {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
+
+div:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+

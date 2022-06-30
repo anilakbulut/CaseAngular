@@ -1,0 +1,26 @@
+
+<div class="list-group-item mb-2">
+    <div id="test" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="assets/img/slider1.jpg"  style="height:300px;width:auto" class="card-img-top">
+                <div class="card-body">
+                  <h2 class="card-title"><strong>These slides show currently popular activities</strong></h2>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item" *ngFor="let item of activities | popular">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="assets/img/{{item.imgUrl}}" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Activities Category: {{item.title}}</strong></h5>
+                  <p class="card-text"><strong>City: {{item.city}}</strong></p>
+                  <p class="card-text"><strong>Description: {{item.description}}</strong></p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+</div>

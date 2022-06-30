@@ -34,5 +34,9 @@ export class AppComponent {
     this.totalEndDate.push(newItem.month)
     this.totalEndDate.push(newItem.year)
   }
+
+  toggleDarkTheme(): void {
+    document.body.classList.toggle('dark-theme');
+  }
 }
 

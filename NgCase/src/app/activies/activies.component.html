@@ -1,10 +1,44 @@
+<div class="modal fade"id="reg-modal" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <router-outlet></router-outlet>
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+          routerLink="activities">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
 
 <div>
-    <div class="mb-3">
-        <input type="text" [(ngModel)]="text" placeholder="Searching...">
-        <small class="text-muted"> {{text}}</small>
+    <div class="mb-2">
+        <input class="form-control" type="text" [(ngModel)]="text" placeholder="Search...">
     </div>
-    
+    <app-popular-activities></app-popular-activities>
+  <div class="modal fade"id="reg-modal" aria-hidden="true" aria-labelledby="modal-title">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+        routerLink="activities">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="card mb-4" *ngFor="let item of activities | 
                             activitiesFilter:filterCityId:filterCategoryId:totalStartDate:totalEndDate |
                             searchBarFilter:text
@@ -14,11 +48,13 @@
                 <img src="assets/img/{{item.imgUrl}}" class="img-fluid rounded-end rounded-start" alt="">
             </div>
             <div class="col-md-6">
-                <div class="card-body">
-                    <h3 class="card-title">{{item.title}}</h3>
-                    <p class="card-text">{{item.description}}</p>
-                    <p>{{item.id}}</p>
-                    <a class="btn btn-outline-secondary" routerLink="activities/{{item.id}}"  >Details</a>
+                <div class="card-body"> 
+                    <h3 class="card-title"><b>{{item.title}}</b></h3>
+                    <p class="card-text"><b>{{item.description}}</b></p>
+                    <p><b>{{item.id}}</b></p>
+                    <a class="btn btn-outline-secondary" routerLink="activities/{{item.id}}"
+                    data-bs-toggle="modal" data-bs-target="#reg-modal"
+                    > <b>Details</b></a>
                 </div>
             </div>
         </div>

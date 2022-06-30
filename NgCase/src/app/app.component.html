@@ -11,7 +11,6 @@
       <app-activies [filterCityId]="filterCityId" [filterCategoryId]="filterCategoryId"
       [totalStartDate]="totalStartDate" [totalEndDate]="totalEndDate">
       </app-activies>
-      <router-outlet></router-outlet>
     </div>
     <div class="col-md-2">
       <app-date (totalStartDate)='startDate($event)' (totalEndDate)='endDate($event)'></app-date>

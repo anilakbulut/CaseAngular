@@ -21,8 +21,7 @@ export class ActiviesComponent implements OnInit {
   text:string ="";
 
   constructor(
-    private activitiyService: ActivityService,
-    private activatedRoute: ActivatedRoute
+    private activitiyService: ActivityService
     ) { }
 
   ngOnInit(): void {
@@ -31,6 +30,6 @@ export class ActiviesComponent implements OnInit {
       });
       this.totalStartDate=[0,0,0]
       this.totalEndDate=[0,0,0]
-  }
 
+  }
 }
