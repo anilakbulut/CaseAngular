@@ -25,6 +25,7 @@ export class ActivitiesFilterPipe implements PipeTransform {
       var Days = Time / (1000 * 3600 * 24);
       
       console.log(Days);
+      
 
       if(filterCityId!=0 && filterCategoryId!=0){
         return activies.filter((a: Activities) =>

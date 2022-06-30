@@ -1,6 +1,6 @@
 {
     "activities": [
-        {"id": 1, "actType":"Concer","actId":1,"title": "Concer", "description": "Yıldız Tilbe is with you on the Open Air theatre with her popular songs and unique stage performance...","imgUrl": "yildiztilbe.jpg","city":"Ankara","cityId":1,"date":"07/01/2022","isPopular":true},
+        {"id": 1, "actType":"Concer","actId":1,"title": "Concer", "description": "Yıldız Tilbe is with you on the Open Air museum with her popular songs and unique stage performance...","imgUrl": "yildiztilbe.jpg","city":"Ankara","cityId":1,"date":"07/01/2022","isPopular":true},
         {"id": 2, "actType":"Concer","actId":1,"title": "Concer", "description": "Duman is getting ready to meet with her fans ...","imgUrl": "duman.jpg","city":"İstanbul","cityId":2,"date":"07/02/2022","isPopular":false},
         {"id": 3, "actType":"Theatre","actId":2,"title": "Theatre", "description": "Written by Peter Shaffer, the unique story of Wolfgang Amadeus Mozart and Antonio Salieri, the unforgettable composers of world music history, AMADEUS is on stage!","imgUrl": "amadeus.jpg","city":"İzmir","cityId":3,"date":"07/03/2022","isPopular":false},
         {"id": 4, "actType":"Theatre","actId":2,"title": "Theatre", "description": "Ruh Öküzüm, a two-person comedy play that the audience always gives full marks to, is meeting with theater lovers.","imgUrl": "ruhokuzum.jpg","city":"İstanbul","cityId":2,"date":"08/04/2022","isPopular":false},
